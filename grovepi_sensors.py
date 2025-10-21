@@ -32,6 +32,7 @@ while True:
         setRGB(0, 255, 0)
     bottom_line = f"{distance:3d}cm"
     setText_norefresh(top_line + "\n" + bottom_line)
+    time.sleep(0.1)
     
   except IOError:
     print("Error")
