@@ -26,8 +26,8 @@ while True:
     if distance < threshold:
         top_line = f"{threshold} OBJ PRES"
     else:
-        top_line = f"{threshold}"
-    bottom_line = f"{distance}"
+        top_line = f"{threshold}cm"
+    bottom_line = f"{distance}cm"
     setText_norefresh(top_line + "\n" + bottom_line)
     
   except IOError:
