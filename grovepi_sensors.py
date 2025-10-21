@@ -24,7 +24,7 @@ while True:
     
     # TODO: format LCD text according to threshhold
     if distance < threshold:
-        top_line = f"{threshold:3d} OBJ PRES"
+        top_line = f"{threshold:3d}cm OBJ PRES"
     else:
         top_line = f"{threshold:3d}cm"
     bottom_line = f"{distance:3d}cm"
