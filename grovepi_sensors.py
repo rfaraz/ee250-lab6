@@ -1,3 +1,4 @@
+# Rida Faraz & Leyaa George
 import sys
 sys.path.append('~/Dexter/GrovePi/Software/Python')
 import time
@@ -25,8 +26,10 @@ while True:
     # TODO: format LCD text according to threshhold
     if distance < threshold:
         top_line = f"{threshold:3d}cm OBJ PRES"
+        setRGB(255, 0, 0)
     else:
-        top_line = f"{threshold:3d}cm"
+        top_line = f"{threshold:3d}cm         "
+        setRGB(0, 255, 0)
     bottom_line = f"{distance:3d}cm"
     setText_norefresh(top_line + "\n" + bottom_line)
     
