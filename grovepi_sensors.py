@@ -19,7 +19,8 @@ while True:
     distance = grovepi.ultrasonicRead(ultrasonic_ranger)
 
     # TODO: read threshold from potentiometer
-    threshold = grovepi.analogRead(potentiometer)
+    # threshold = grovepi.analogRead(potentiometer)
+    threshold = int((grovepi.analogRead(potentiometer) / 1024 ) * 518)
     
     # TODO: format LCD text according to threshhold
     if distance < threshold:
