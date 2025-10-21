@@ -7,12 +7,19 @@
 ## Reflection Questions
 **1. Suppose you just cloned a repository that included one python file, my_first_file.py, and you now want to add a second file to your repository named
 my_second_file.py which contains the following code and push it to Github.com. Code - print(“Hello World”). Complete the sequence of linux shell commands:**
+
 `git clone git@github.com:my-name/my-imaginary-repo.git`
+
 `cd my-imaginary-repo` 
+
 `touch my_second_file.py`
+
 `echo 'print("Hello World")' > my_second_file.py`
+
 `git add .`
+
 `git commit -m "second file added"`
+
 `git push`
 
 **2. Describe the workflow you adopted for this lab (i.e. did you develop on your VM and push/pull to get code to your RPi, did you edit files directly on your RPi, etc.). Are there ways you might be more efficient in the next lab (i.e. learning a text-based editor so you can edit natively on the RPi, understanding Git commands better, etc.)?**
